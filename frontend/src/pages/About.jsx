@@ -57,9 +57,9 @@ function About() {
             </div>
 
             <section className='socials flex justify-center gap-x-28 mt-28'>
-                <a href='https://www.facebook.com/markwell.fb'><FontAwesomeIcon icon="fa-brands fa-square-facebook" size='2xl'/></a>
-                <a href='https://github.com/mark-well'><FontAwesomeIcon icon="fa-brands fa-square-github" size='2xl'/></a>
-                <a href='https://www.instagram.com/its__merts/'><FontAwesomeIcon icon="fa-brands fa-square-instagram" size='2xl'/></a>
+                <a href='https://www.facebook.com/markwell.fb' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-facebook" size='2xl'/></a>
+                <a href='https://github.com/mark-well' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-github" size='2xl'/></a>
+                <a href='https://www.instagram.com/its__merts/' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-instagram" size='2xl'/></a>
             </section>
 
             <Footer />
