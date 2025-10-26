@@ -1,9 +1,9 @@
 
 import profilePic from "../assets/profile.png";
 
-function HeroSection() {
+function HeroSection({className}) {
     return(
-        <main className="hero-section flex items-center w-full">
+        <main className={`hero-section flex items-center gap-x-52 w-full ${className}`}>
             <div className="title-container flex flex-col grow-2 gap-y-4">
                 <h1 className="text-3xl font-bold">Hi, my name is <span className="text-highlight">Mark Well Merto</span> <br/>
                     an aspiring Software Engineer.
