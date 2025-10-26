@@ -1,5 +1,6 @@
 
 import { Helmet } from "react-helmet";
+import Header from "../components/Header";
 
 function Contact() {
     return(
@@ -7,6 +8,7 @@ function Contact() {
             <Helmet>
                 <title>Contact</title>
             </Helmet>
+            <Header />
         </>
     );
 }
