@@ -71,3 +71,9 @@
   border-left: 0;
   border-right: 0;
 }
+
+.submit-button {
+  min-height: 3.5rem;
+  background-color: var(--accent-color);
+  background-image: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-dark) 100%);
+}

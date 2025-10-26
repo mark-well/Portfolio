@@ -56,13 +56,13 @@ function About() {
                 </section>
             </div>
 
-            <section className='socials flex justify-center gap-x-28 mt-28'>
+            <section className='socials flex justify-center gap-x-28 mt-44'>
                 <a href='https://www.facebook.com/markwell.fb' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-facebook" size='2xl'/></a>
                 <a href='https://github.com/mark-well' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-github" size='2xl'/></a>
                 <a href='https://www.instagram.com/its__merts/' target='_blank'><FontAwesomeIcon icon="fa-brands fa-square-instagram" size='2xl'/></a>
             </section>
 
-            <Footer />
+            <Footer className="mt-11"/>
         </>
     );
 }
