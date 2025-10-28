@@ -38,6 +38,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navigation > a {
+  transition: all 120ms ease;
+  padding: 0.3rem 0.4rem;
+  border-radius: 2px;
+}
+
+.navigation > a:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
 .main-button {
   width: 10rem;
   height: 3rem;
