@@ -41,21 +41,21 @@ function Contact() {
                 </div>
                 <div className="flex-1">
                     <form action="post" className='flex flex-col gap-y-4 mt-12'>
-                        <div className='name flex gap-x-6'>
+                        <div className='nameContainer flex gap-x-6'>
                             <div className='fullName flex flex-col gap-y-4'>
-                                <label htmlFor="">Your Full Name</label>
-                                <input id='name' type="text" placeholder='Name' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
+                                <label htmlFor="name">Your Full Name</label>
+                                <input id='name' name='name' type="text" placeholder='Name' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
                             </div>
-                            <div className='email flex flex-col gap-y-4'>
+                            <div className='emailContainer flex flex-col gap-y-4'>
                                 <label htmlFor="email">Your Email*</label>
-                                <input id='email' type="text" placeholder='Email' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
+                                <input id='email' name='email' type="text" placeholder='Email' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
                             </div>
                         </div>
-                        <div className='subject flex flex-col gap-y-4'>
+                        <div className='subjectContainer flex flex-col gap-y-4'>
                             <label htmlFor="subject">Your Subject</label>
-                            <input id='subject' type="text" placeholder='Subject' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
+                            <input id='subject' name='subject' type="text" placeholder='Subject' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
                         </div>
-                        <div className='message flex flex-col gap-y-4'>
+                        <div className='messageContainer flex flex-col gap-y-4'>
                             <label htmlFor="message">Enter your message</label>
                             <textarea name="message" id="message" placeholder='Type your message here...' className='min-h-64 p-4 resize-none outline-hidden bg-[var(--primary-color-light)]'></textarea>
                         </div>
