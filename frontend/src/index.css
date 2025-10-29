@@ -100,4 +100,8 @@
     conic-gradient(from 90deg at 1px 1px,var(--_g)),
     var(--c2);
   background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
-} 
+}
+
+.hero-section {
+  column-gap: clamp(1, 7, 13);
+}
