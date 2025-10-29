@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid white; */
   }
 }
 
@@ -38,14 +39,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.navigation > a {
+.navigation-default > a {
   transition: all 120ms ease;
-  padding: 0.3rem 0.4rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 2px;
 }
 
-.navigation > a:hover {
+.navigation-default > a:hover {
   background-color: var(--accent-color);
+}
+
+.profile-picture {
+  position: relative;
+  transition: all 250ms ease;
+}
+
+.profile-picture:hover {
   transform: scale(1.1);
 }
 
@@ -87,6 +96,18 @@
   min-height: 3.5rem;
   background-color: var(--accent-color);
   background-image: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-dark) 100%);
+}
+
+.send-email * {
+  border: 1px solid transparent;
+  transition: all 120ms ease;
+}
+.send-email textarea:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.send-email input:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .no-page-container {
