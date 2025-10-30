@@ -13,7 +13,7 @@ function NoPage() {
                 <h1 className="font-bold text-8xl text-center mt-28">404</h1>
                 <section className='info-section mt-14 about-section bg-[var(--primary-color)] font-montserrat'>
                     <h2 className='font-bold text-4xl'>Oops!</h2>
-                    <div className='flex flex-col gap-y-8 text-justify p-8'>
+                    <div className='flex flex-col gap-y-8 text-center p-8'>
                         <p className='max-w-3xl'>
                             Sorry, the page you're looking for doesn't seem to exist in this universe.
                         </p>

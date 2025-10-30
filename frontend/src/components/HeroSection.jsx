@@ -1,15 +1,20 @@
 
 import profilePic from "../assets/profile.png";
+import PrimaryButton from '../components/PrimaryButton'
 
 function HeroSection({className}) {
+    const knowMoreButton = {
+        width: '10rem', 
+        height: '3rem' 
+    }
+
     return(
         <main className={`hero-section flex items-center gap-x-52 w-full max-sm:flex-col-reverse max-sm:gap-x-24 ${className}`}>
             <div className="title-container flex flex-col flex-1 gap-y-4 max-sm:items-center">
                 <h1 className="text-3xl font-bold max-sm:text-xl max-sm:text-center">Hi, my name is <span className="text-highlight">Mark Well Merto</span> <br/>
                     an aspiring Software Engineer.
                 </h1>
-
-                <a href="/about" className="main-button">Know More</a>
+                <PrimaryButton content='Know More' to='/about' style={knowMoreButton}/>
             </div>
 
             <div className="flex flex-1 justify-center">
