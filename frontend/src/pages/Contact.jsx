@@ -41,7 +41,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <form action="post" className='send-email flex flex-col gap-y-4 mt-12'>
+                    <form action="https://formspree.io/f/mvgvqzoo" method='POST' className='send-email flex flex-col gap-y-4 mt-12'>
                         <div className='nameContainer flex gap-x-6 max-sm:flex-col max-sm:gap-y-4'>
                             <div className='fullName flex flex-col gap-y-4'>
                                 <label htmlFor="name">Your Full Name</label>
@@ -49,12 +49,8 @@ function Contact() {
                             </div>
                             <div className='emailContainer flex flex-col gap-y-4'>
                                 <label htmlFor="email">Your Email*</label>
-                                <input id='email' name='email' type="text" placeholder='Email' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
+                                <input id='email' name='email' type="email" placeholder='Email' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
                             </div>
-                        </div>
-                        <div className='subjectContainer flex flex-col gap-y-4'>
-                            <label htmlFor="subject">Your Subject</label>
-                            <input id='subject' name='subject' type="text" placeholder='Subject' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
                         </div>
                         <div className='messageContainer flex flex-col gap-y-4'>
                             <label htmlFor="message">Enter your message</label>
