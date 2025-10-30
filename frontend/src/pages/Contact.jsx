@@ -8,6 +8,7 @@ library.add(fas, far, fab)
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer"
+import PrimaryButton from '../components/PrimaryButton'
 
 function Contact() {
     return (
@@ -16,7 +17,7 @@ function Contact() {
                 <title>Contact</title>
             </Helmet>
             <Header />
-            <div className="w-full pl-[180px] pr-[180px] flex gap-x-40 mt-36 font-montserrat">
+            <div className="w-full pl-[180px] pr-[180px] flex gap-x-40 gap-y-20 mt-36 font-montserrat max-sm:flex-col max-sm:px-8">
                 <div className="flex-1 flex flex-col gap-y-20">
                     <div className='flex flex-col gap-y-4'>
                         <h1 className='font-bold text-3xl'>Get in Touch</h1>
@@ -40,8 +41,8 @@ function Contact() {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <form action="post" className='flex flex-col gap-y-4 mt-12'>
-                        <div className='nameContainer flex gap-x-6'>
+                    <form action="post" className='send-email flex flex-col gap-y-4 mt-12'>
+                        <div className='nameContainer flex gap-x-6 max-sm:flex-col max-sm:gap-y-4'>
                             <div className='fullName flex flex-col gap-y-4'>
                                 <label htmlFor="name">Your Full Name</label>
                                 <input id='name' name='name' type="text" placeholder='Name' className='h-12 pl-4 pr-4 outline-hidden bg-[var(--primary-color-light)]'/>
@@ -59,7 +60,7 @@ function Contact() {
                             <label htmlFor="message">Enter your message</label>
                             <textarea name="message" id="message" placeholder='Type your message here...' className='min-h-64 p-4 resize-none outline-hidden bg-[var(--primary-color-light)]'></textarea>
                         </div>
-                        <input type="submit" value='Submit' className='submit-button'/>
+                        <PrimaryButton content='Submit' type='submit'/>
                     </form>
                 </div>
             </div>

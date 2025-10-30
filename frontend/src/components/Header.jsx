@@ -3,7 +3,7 @@ function Header() {
     return (
         <header className="text-base min-h-16 flex items-center w-full text-[var(--text-color)]">
             <nav className="w-full">
-                <ul className="navigation flex items-center justify-center gap-12">
+                <ul className="navigation-default flex items-center justify-center gap-12 max-md:gap-8">
                     <a href="/home"><li>Home</li></a>
                     <a href="/about"><li>About</li></a>
                     <a href="/contact"><li>Contact</li></a>
