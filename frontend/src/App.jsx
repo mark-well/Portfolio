@@ -9,7 +9,7 @@ import NoPage from './pages/NoPage'
 function App() {
   return (
     <>
-      <BrowserRouter basename='/Portfolio'>
+      <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
